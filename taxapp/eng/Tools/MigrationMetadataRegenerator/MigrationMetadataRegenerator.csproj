@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MigrationMetadataRegenerator</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore.Tools.MigrationMetadataRegenerator</RootNamespace>
+    <Description>Regenerates migration .Designer.cs files into an output folder for manual diff and recovery after parallel migration merges.</Description>
+    <TargetFramework>$(DefaultNetCoreTargetFramework)</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>true</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)..\..\..\..\rulesets\EFCore.noxmldocs.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\EFCore.Design\EFCore.Design.csproj" />
+  </ItemGroup>
+</Project>

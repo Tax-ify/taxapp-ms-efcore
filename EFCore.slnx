@@ -90,6 +90,11 @@
       <Build Project="false" />
     </Project>
   </Folder>
+  <Folder Name="/taxapp/">
+    <Folder Name="/taxapp/eng/Tools/">
+      <Project Path="taxapp/eng/Tools/MigrationMetadataRegenerator/MigrationMetadataRegenerator.csproj" />
+    </Folder>
+  </Folder>
   <Folder Name="/benchmark/">
     <Project Path="benchmark/EFCore.Benchmarks/EFCore.Benchmarks.csproj" />
     <Project Path="benchmark/EFCore.Sqlite.Benchmarks/EFCore.Sqlite.Benchmarks.csproj" />
